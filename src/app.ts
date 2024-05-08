@@ -3,7 +3,7 @@ const app = express();
 var cors = require("cors");
 
 const corsOptions = {
-  origin: ['http://localhost:3000','https://able-frontend-gouravshandilya69s-projects.vercel.app'], // Allow requests from all origins
+  origin: ['http://localhost:3000','https://able-frontend.vercel.app/'], // Allow requests from all origins
   credentials: true // Allow credentials (e.g., cookies)
 };
 
@@ -54,5 +54,8 @@ app.all("*", (req: any, res: any, next: any) => {
   next(new errorHandler(`requested url not found ${req.url}`), 404);
 });
 app.use(generatedErrors);
+
+
+
 
 export { app };

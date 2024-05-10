@@ -38,16 +38,8 @@ router.get("/finduserbyname", isAdmin, finduserbyname);
 router.get("/allUser", isAdmin, allUser);
 router.get("/deleteUser/:userId", isAdmin, deleteUser);
 
-//collections details
-router.get("/dayCollection", isAdmin, dayCollection);
-router.get("/dayCollectionTotal", isAdmin, dayCollectionTotal);
-router.get("/weeklyCollection", isAdmin, weeklyCollection);
-router.get("/weeklyCollectionTotal", isAdmin, weeklyCollectionTotal);
-router.get("/weeklyEachDayCollectionTotal",weeklyEachDayCollectionTotal);
-router.get("/monthlyCollection", isAdmin, monthlyCollection);
-router.get("/monthlyRevenueTotal", isAdmin, monthlyRevenueTotal);
-router.get("/monthlyEachDayCollectionTotal", last30DaysCollectionTotal);
-router.get("/allCollection", isAdmin, allCollection);
+
+
 
 
 

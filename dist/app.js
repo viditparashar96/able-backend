@@ -40,6 +40,7 @@ app.use("/user", require("./routes/userRoutes"));
 app.use("/customer", require("./routes/customerRoutes"));
 app.use("/invoice", require("./routes/invoiceRoutes"));
 app.use("/collection", require("./routes/collectionRoutes"));
+app.use("/editRequest", require("./routes/editRequestRoutes"));
 //error handling
 const errorHandler = require("./utils/errorHandler");
 const errors_1 = require("./middleware/errors");
